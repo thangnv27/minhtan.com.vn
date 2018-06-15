@@ -1,0 +1,42 @@
+/*
+	Theme Name: VNking Viet Nam
+	Theme URL: http://vnkingnet.com
+	Description: 
+	Author: VNking
+	Author URI: http://vnkingnet.com
+	Version: 1.0
+*/
+
+/******************************************************
+    [ LAYOUT ]
+*******************************************************/
+
+body {font-family:Arial, Helvetica, sans-serif;font-size:12px;margin:0;padding:0;color:#333;}
+html.wp-toolbar { margin-top:12px;}
+html body #wpadminbar  { background:#FFF; width:100%; float:left; height:40px; margin:0; padding: 0; color:#2a3542;border-bottom:1px solid #f1f2f7;}
+html body #wpadminbar a, #wpadminbar *{ color:#3b5998; font-size:14px; line-height:40px; text-shadow:none !important}
+html body #wpadminbar  .quicklinks > ul > li, html body #wpadminbar  .quicklinks > ul > li > a, #wpadminbar .quicklinks > ul > li > .ab-empty-item { border:none}
+html body #wpadminbar   #wp-admin-bar-wp-logo > .ab-item .ab-icon { background:url(img/logo.png) no-repeat; width:100px; height:33px;position:relative; margin-left: 20px;}
+html body #wpadminbar   #wp-admin-bar-wp-logo > .ab-item .ab-icon:before{position:absolute;content:"";top: 10px;left: -25px;width:19px;height:14px;background:url(img/list.png) no-repeat;}
+#wpadminbar .ab-top-menu>li:hover>.ab-item, #wpadminbar .ab-top-menu>li.hover>.ab-item, #wpadminbar .ab-top-menu>li>.ab-item:focus, #wpadminbar.nojq .quicklinks .ab-top-menu>li>.ab-item:focus{background:#fff;}
+#wpadminbar.nojs #wp-admin-bar-wp-logo:hover>.ab-item .ab-icon, #wpadminbar #wp-admin-bar-wp-logo.hover>.ab-item .ab-icon{background-position:0;}
+#wpadminbar .quicklinks a, #wpadminbar .quicklinks .ab-empty-item, #wpadminbar .shortlink-input{height:40px;}
+#wpadminbar .ab-top-menu>li:hover>.ab-item, #wpadminbar .ab-top-menu>li.hover>.ab-item, #wpadminbar .ab-top-menu>li>.ab-item:focus, #wpadminbar.nojq .quicklinks .ab-top-menu>li>.ab-item:focus{color:#333;}
+#wpadminbar .quicklinks .ab-top-secondary>li{border-left:none;}
+#wpadminbar .ab-top-secondary{background:none;}
+#wpadminbar .quicklinks .ab-top-secondary>li>a, #wpadminbar .quicklinks .ab-top-secondary>li>.ab-empty-item{border-left:none;}
+
+#adminmenuwrap {
+    float: left;
+    position: relative;
+	width:180px;
+	background:#2a3542;
+	height:100%;
+}
+#screen-meta-links .screen-meta-toggle { display:none}
+#wpcontent { height:100%; margin-left:200px;}
+#adminmenu li.menu-top {
+    min-height: 28px;
+    position: relative;
+}
+ul#adminmenu { margin:0; padding:0; float:left;}

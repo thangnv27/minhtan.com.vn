@@ -1,0 +1,191 @@
+/*
+	Theme Name: Wp shop
+	Theme URL: http://ecosoft.com.vn
+	Description: Hệ thống được xây dựng dựa trên những phân tích đánh giá của các chuyên gia thương mại điện tử tại Việt Nam - Phù hợp với các yêu cầu hiện tại của những hệ thống lớn nhất về thương mại điện tử : Được thực hiện bởi Ecosoft
+	Author: Ecosoft
+	Author URI: http://ecosoft.com.vn
+	Version: 3.0
+*/
+h1 { font-size:20px;} h2 { font-size:18px;} h3 { font-size:16px;} h4 { font-size:14px;}
+img.logo { margin:10px 0; float:left; max-height:75px;}
+.maim_menu_header {background:#045594; border-radius:5px 5px 0 0; padding:0; padding-top:5px}
+#searchform {width:100%; float:left; margin:0; margin-bottom:5px}
+.giohangh  { text-align:right; float:right}
+p.giohangstyle { margin:0; padding:10px; font-size:12px}
+.giohangh a { color:#feffff; text-transform:uppercase}
+.quangcao3cot { padding:10px 0;}
+
+.navbar_menutop { float:right; margin:0; padding:5px 0;}
+.navbar_menutop ul { float:right; margin:0; padding:0;}
+.navbar_menutop ul li { float:left; padding:5px 0; margin:0; line-height:20px}
+.navbar_menutop ul li a { margin:0; padding:0 10px; color:#333; font-size:12px; border-radius:5px;}
+.navbar-header button { float:right; background:#045594; border-radius:5px; padding:5px; }
+.navbar-header .glyphicon { font-size:30px; color:#FFF;}
+
+.coler-desc { width:100%; float:left;}
+.coler-desc .coler-icon { float:left; padding:2px 5px;}
+.coler-desc .coler-icon span { font-size:20px; color:#045594; border:2px solid #045594; width:35px; height:35px; padding:5px; border-radius:50px;}
+.coler-desc .coler-mest { float:left; font-size:12px; text-transform:uppercase; line-height:20px; font-weight:bold; color:#045594;}
+.coler-desc .coler-mest p.sdt { font-size:25px; color:#F6BB21}
+.coler-desc .coler-icon_pro { float:left; padding:2px 5px;}
+.coler-desc .coler-icon_pro span { font-size:15px; color:#045594; border:2px solid #045594; width:30px; height:30px; padding:5px; border-radius:50px;}
+.coler-desc .coler-mesting { font-size:12px; float:left; color:#045594;padding:2px 5px; display:inline; max-width:110px; text-transform:uppercase}
+.coler-desc .coler-mesting:hover, .coler-desc .coler-icon_pro:hover span { color:#F6BB21; cursor:pointer}
+
+.full_home_sanpham {width:100%; float:left; padding:30px 0 20px 0; margin:0; background:url(images/bg_bong.jpg) repeat-x top}
+.motsanpham { border:2px solid #FFF; float:left; padding:10px}
+.motsanpham:hover { border:2px solid #D9534F; border-radius:5px}
+.motsanpham img { padding:5px;}
+.motsanpham  h2 { font-size:14px; line-height:20px; min-height:45px;}
+.motsanpham  h2 a { color: #333333;float: left;font-size: 12px;font-weight: bold;margin-left: 10px;}
+
+.motsanpham .post-price { width:100%; float:left}
+.motsanpham .post-price .price  { float:left; width:70%}
+.motsanpham .post-price .price del { float:left; width:100%; font-size:12px; color:#666; font-style:italic}
+.motsanpham .post-price .price ins { float:left; width:100%; text-decoration:none; font-size:15px; color:#BB0000; font-weight:bold}
+.motsanpham .post-price .price span.amount{ float:left; width:100%; text-decoration:none; font-size:15px; color:#BB0000; font-weight:bold}
+.motsanpham .post-price .price del span.amount{ float:left; width:100%; font-size:12px; color:#666; font-style:italic; font-weight:normal}
+.motsanpham .post-price .price .salepercent { float:right; margin-top:10px}
+.is_on_sale { position:absolute; right:10px; top:20px; font-size:13px; font-weight:bold}
+
+.module_sanpham h3.title_link { background:#FCE063; width:100%; float:left; border-radius:5px 5px 0 0; margin:0; padding:0 }
+.module_sanpham h3.title_link a.title_link_a { background:#045594;color:#FFF; font-size:15px; float:left; padding:10px 0;padding-right:10px; border-radius:5px 0 0 0; font-weight:700; text-transform:uppercase}
+.module_sanpham h3.title_link a.title_link_a span { margin-left:10px; margin-right:10px}
+.module_sanpham h3.title_link a.title_link_no { float:right; font-size:12px; font-style:italic; margin:10px; color:#333}
+
+.module_tintuc_khachhang .row { background:#f0f0ef; padding:0 10px}
+.module_tintuc_khachhang h4.tieudenewsf { background:#00418e; width:100%; float:left; border-radius:5px 5px 0 0; margin:0; padding:0 ; border-bottom:1px solid #FFF;}
+.module_tintuc_khachhang h4.tieudenewsf a {color:#FFF; font-size:15px; float:left; padding:10px 0;padding-right:10px; border-radius:5px 0 0 0; font-weight:700; text-transform:uppercase}
+.module_tintuc_khachhang h4.tieudenewsf a span { margin-left:10px; margin-right:10px}
+.module_tintuc_khachhang h4.tieudenewsf a.title_link_no { float:right; font-size:12px; font-style:italic; padding:10px 10px 0 8px; color:#FFF; text-transform:none; font-weight:normal}
+
+.module_tintuc_khachhang .tintuchome { margin-top:20px;}
+.module_tintuc_khachhang .tintuchome h3 {margin:0; padding:10px 0; min-height:55px; width:100%; float:left; font-size:20px;}
+.module_tintuc_khachhang .tintuchome h3 a { color:#333}
+.module_tintuc_khachhang .tintuchome h3:hover a { color:#00418E;}
+.module_tintuc_khachhang .channewh3 { width:100%; float:left; background:#dedede; margin:10px 0; }
+.module_tintuc_khachhang .channewh3 small{ background:#00418E; width:80px; float:left; padding:1px; }
+
+.module_newfooter .row { float:left; padding:10px 0;}
+.module_newfooter .row h4.tieudenewsf { color:#555; width:100%; float:left; border-bottom:1px solid #e6e6e6}
+.module_newfooter .row h4.tieudenewsf a {color:#555; ; padding:5px 0; text-transform:uppercase; font-size:15px}
+.module_newfooter .row h4.tieudenewsf a  span { margin-left:10px; margin-right:10px}
+.module_newfooter .row h4.tieudenewsf a.title_link_no { float:right; font-size:12px; font-style:italic; padding:5px 10px 10px 8px; color:#333; text-transform:none; font-weight:normal}
+.module_newfooter .row .benphainhe { float:left}
+.module_newfooter .row .col-md-5 img { margin-bottom:10px;}
+
+.module_newfooter .row .benphainhe img { float:right; margin-left:20px}
+.module_newfooter .row .benphainhe h2 { margin:0; padding:0; padding-bottom:10px}
+.module_newfooter .row a { font-size:15px; color:#333; font-weight:bold}
+.module_newfooter .row .benphainhe  h3 {width:100%; float:left; margin:0; padding:8px 0}
+.module_newfooter .row .benphainhe  h3 a { font-size:12px; color:#333}
+.module_newfooter .row .benphainhe  h3 span { margin-right:10px;}
+.luotxem { width:100%; float:left; border-bottom:1px solid #e6e6e6; border-top:1px solid #e6e6e6; padding:5px 0; margin:5px 0}
+.luotxem p { float:left; font-size:11px; font-style:italic; color:#666; margin:0; padding:0 5px}
+.luotxem p a { margin:0; padding:0; font-size:11px !important; font-weight:normal}
+.module_newfooter { padding-top:10px;}
+.module_newfooter .row {width:100%; float:left; margin:0; padding:0}
+.module_newfooter .row .hotroonline {width:100%; float:left; margin:0; padding:0}
+.module_newfooter .row .hotroonline  p.tieude {width:100%; float:left;color:#000; width:100%; float:left; border-bottom:1px solid #e6e6e6; ; padding:9px 0; text-transform:uppercase; font-size:15px; font-weight:bold; text-align:right}
+.module_newfooter .row .hotroonline  p.tieude  span { margin-right:10px; color:#BB0000}
+.module_newfooter .row .info_thongtin {width:100%; float:left; margin:10px 0; border:none}
+.module_newfooter .row .info_thongtin p span.glyphicon { font-size:20px; float:left; color:#BB0000; margin-top:5px; margin-right:10px}
+.module_newfooter .row .info_thongtin p strong {font-size:20px; color:#BB0000;}
+.module_newfooter .row .info_thongtin p i { padding-left: 32px;}
+
+.module_newfooter .email_khuyenmai p.email_la_email { font-size:15px; color:#333; text-transform:uppercase; border:1px solid #EEE; color:#045594; padding:5px; border-radius:5xp;}
+.module_newfooter .email_khuyenmai p.email_la_email  span { margin-right:10px; float:left; color:#BB0000;}
+.module_newfooter  .alert  {box-shadow:none}
+.module_newfooter .email_khuyenmai .eemail_caption { font-style:italic; font-size:12px;}
+.module_newfooter .email_khuyenmai input#eemail_txt_email { width:100%;}
+
+#footer { background:#045594; border-radius:5px; color:#FFF}
+.menu_full_produc #menu-main-menu { display:none; position:absolute; margin-top:38px; z-index:999}
+.menu_full_produc p.danhmucmenu { cursor:pointer;}
+.menu_full_produc:hover #menu-main-menu { display:block;}
+.row .wp-pagenavi { width:100%; float:left; padding:20px 0}
+.row .wp-pagenavi span, .row .wp-pagenavi a{border:none !important; padding:5px 8px;}
+.hrviet {width:100%; float:left; padding:1px 0; margin:15px 0; clear:both; border-top:1px solid #EEEEEE;}
+.single-product .breadcrumb { margin-top:10px !important; float:left; width:100%}
+.breadcrumb { padding:5px !important; float:left; width:100%}
+.breadcrumb span { float:left; margin:2px 5px; font-size:11px}
+h1.catproduc-title{ margin:5px 0; padding:5px 0; font-size:15px; text-transform:uppercase; font-weight:bold; color:#045594}
+h1.catproduc-title span { margin-right:10px; float:left}
+.navbar { background:url(images/bg_bong.jpg) repeat-x top; padding:15px 10px; padding-top:20px}
+/* =Price Filter Widget */
+#slidebar .widget_price_filter form { padding:20px;background:url(images/bg_bong.jpg) repeat-x top} 
+#slidebar .widget_price_filter form .btn { float:left}
+#slidebar .widget ul.yith-wcan, #slidebar .widget .sanphamdangkhuyenmai { padding:20px;background:url(images/bg_bong.jpg) repeat-x top }
+#slidebar .widget ul.yith-wcan li { padding:5px 0;}
+#slidebar .widget ul.yith-wcan li a { color:#333;}
+#slidebar .widget ul.yith-wcan .count { padding:3px 6px; color:#FFF; border-radius:20px;}
+.ssanphamlienquanss { width:100%; float:left}
+.ssanphamlienquanss .panel-tieude {color:#045594; font-size:15px; text-transform:uppercase; margin:0; padding:8px 0; font-weight:bold; text-indent:15px;}
+.ssanphamlienquanss .panel-tieude span { float:left; margin-right:10px}
+.ssanphamlienquanss .panel-body {background:url(images/bg_bong.jpg) repeat-x top}
+.product_meta span.glyphicon  { padding:5px; margin:0 5px}
+.product_meta .posted_in a { color:#333; }
+.binhliansanp {background:url(images/bg_bong.jpg) repeat-x top}
+.binhlan {color:#045594; font-size:15px; text-transform:uppercase; margin:0; padding:8px 0; font-weight:bold; text-indent:15px;}
+.binhlan span { float:left; margin-right:10px}
+.module_tintuc_khachhang { padding-top:10px;}
+
+#slidebar .widget_nav_menu, #slidebar .widget { border:1px solid #EEEEEE; margin:0; margin-top:10px; width:100%; float:left}
+#slidebar .widget_nav_menu h4, #slidebar .widget h4 { color:#045594; font-size:15px; text-transform:uppercase; margin:0; padding:8px 0; font-weight:bold; text-indent:15px;}
+#slidebar .widget h4 span { float:left; margin-right:10px}
+#slidebar .widget_nav_menu ul { margin:0; padding:0; padding-top:10px; float:left; background:url(images/bg_bong.jpg) repeat-x top}
+#slidebar .widget_nav_menu ul li { margin:0; padding:6px 0; float:left; list-style:none; width:100%; text-indent:15px;}
+#slidebar .widget_nav_menu ul li span { float:left; font-size:8px; color:#045594; margin:5px}
+#slidebar .widget_nav_menu ul li a { color:#333;}
+.chitietsanpham_full { width:100%; float:left; margin:0; padding:10px 0;}
+.chitietsanpham_full .images a.woocommerce-main-image { border:none ; box-shadow:none}
+.chitietsanpham_full .thumbnails { margin:auto;}
+.chitietsanpham_full .thumbnails img { float:left; margin:5px;}
+.chitietsanpham_full .giohang { width:100%; float:left; margin:0; padding:10px 0;}
+.chitietsanpham_full .giohang table { width:100%; float:left; margin:0; padding:0;}
+.chitietsanpham_full .giohang  .buttons_added { float:left;}
+.chitietsanpham_full .giohang .quantity { margin-right:20px; float:left}
+.chitietsanpham_full .giohang .btn-danger { margin-left:20px; padding:3px 15px;}
+.chitietsanpham_full .giohang .btn-danger .glyphicon { margin:2px 6px}
+
+.giasanph { width:100%; float:left}
+.giasanph .price  { float:left; }
+.giasanph .price del { float:left; width:100%; font-size:12px; color:#666; font-style:italic}
+.giasanph .price ins { float:left; width:100%; text-decoration:none; font-size:15px; color:#BB0000; font-weight:bold}
+.giasanph .price span.amount{ float:left;  text-decoration:none; font-size:25px; color:#BB0000; font-weight:bold}
+.giasanph .price del span.amount{ float:left; width:100%; font-size:12px; color:#666; font-style:italic; font-weight:normal}
+.giasanph .price .salepercent { float:right; margin-top:10px}
+.is_on_sale { position:absolute; right:10px; top:20px; font-size:13px; font-weight:bold}
+.hotlie { width:100%; float:left}
+.hotlie p.sft { font-size:15px;}
+.hotlie p b { color:#BB0000; font-size:18px;}
+.cacbuocdathang {width:100%; float:left; border-bottom:5px solid #FCE063; margin:10px 0; display:none}
+.cacbuocdathang .buoc_nhanh { background:#EEE; border:2px solid #FFF; margin:10px 0; border-radius:5px; padding:10px 0; color:#999}
+.cacbuocdathang .buoc_nhanh_ok { background:#F6BB21; color:#000 }
+.cacbuocdathang .buoc_nhanh_ok_xam { background:#EEE;color:#999 }
+.cacbuocdathang .buoc_nhanh .dhtrai { float:left; font-size:50px; margin:10px}
+.cacbuocdathang .buoc_nhanh .dathangphai { float:left; font-size:15px;}
+.cacbuocdathang .buoc_nhanh .dathangphai p { padding:8px 0 0 0; margin:0}
+.cacbuocdathang .buoc_nhanh .dathangphai p strong { font-size:20px; text-transform:uppercase;}
+.cacbuocdathang .buoc_nhanh .dathangphai p.buoc_la_buoc { margin-top:0px;}
+.cacbuocdathang .buoc_nhanh .ok_thi_ok { position:absolute;text-align:center; font-size:20px; padding:0; width:100%; color:#F6BB21; margin-top:13px; display:none}
+.cacbuocdathang .buoc_nhanh .ok_thi_ok_hien { display:block}
+.cacbuocdathang .buoc_nhanh .ok_thi_ok_hien_an { display:none}
+.clear { clear:both}
+.hienthi_dinhe { display:block}
+.cotfooter { padding:20px; font-size:12px;}
+.cotfooter p.widgettitlefooter{ font-size:15px; font-weight:bold; text-transform:uppercase;}
+.cotfooter p.congty { font-weight:bold;}
+.cotfooter span.glyphicon { margin-right:10px;}
+.cotfooter p.dia_chi { font-style:italic;}
+.cotfooter ul.menu { margin:0; padding:0 15px;}
+.cotfooter ul.menu li { padding:5px 0;}
+.cotfooter ul.menu li a { color:#FFF; font-size:12px;}
+#banquyen { padding:10px; color:#333}
+#banquyen a {color:#333}
+img.aligncenter { margin:10px auto;}
+img.alignleft { margin-right:10px;}
+img.alignright { margin-left:10px;}
+.noidung_bai_single_cat { padding:10px 0;}
+.noidung_bai_single_cat .text-content-news { float:left;}
+.noidung_bai_single_cat .text-content-news h2 { margin:0; padding:0;}

@@ -1,0 +1,72 @@
+.mau1 {
+    background: #e6eeaf;
+    border: 1px #b5ca28 dashed;
+    line-height: 27px;
+    margin-bottom: 5px;
+    width: 100%;
+    display: block;
+    margin-top: 0;
+	padding: 10px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.mau2 {
+    background: #b4d1e7;
+    border: 1px #b5ca28 dashed;
+    line-height: 27px;
+    margin-bottom: 5px;
+    width: 100%;
+    display: block;
+	margin-top: 0;
+	padding: 10px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.mau3 {
+    background: #fff;
+    border: 1px #ea6114 dashed;
+    line-height: 27px;
+    width: 100%;
+    display: block;
+    margin-bottom: 5px;
+	margin-top: 0;
+	padding: 10px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.mau4 {
+    background: #e4cde3;
+    border: 1px #e791c2 dashed;
+    line-height: 27px;
+    width: 100%;
+    display: block;
+    margin-bottom: 5px;
+	padding: 10px;
+	margin-top: 0;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.mau5 {
+    background: #bbe2b4;
+    border: 1px #0211cc dashed;
+    line-height: 27px;
+    width: 100%;
+    display: block;
+    margin-bottom: 5px;
+	margin-top: 0;
+	padding: 10px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.mau6 {
+    background: #f9f7aa;
+    border: 1px #b5ca28 dashed;
+    line-height: 27px;
+    margin-bottom: 5px;
+    width: 100%;
+    display: block;
+margin-bottom: 5px;
+	margin-top: 0;
+	padding: 10px;
+	border-radius: 10px 10px 10px 10px;
+}
