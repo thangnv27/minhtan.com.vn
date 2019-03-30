@@ -71,9 +71,14 @@ if ($salevew>0&$salevew<100) {
 <h2><a href="<?php bloginfo('url'); ?>">Trang chủ</a></h2>
 <?php endif; ?>
 <div class="row">
+    <?php
+    global $wp_query;
+    if($wp_query->found_posts > 24):
+    ?>
     <div class="load-more-product" data-page="2" data-cat="<?php echo get_queried_object_id() ?>">
         <span> Xem thêm sản phẩm <i class="fa fa-long-arrow-down" aria-hidden="true"></i></span>
     </div>
+    <?php endif; ?>
 <?php // wp_pagenavi(); ?>
 <?php // do_action('woocommerce_pagination'); ?>
 	<hr>	
