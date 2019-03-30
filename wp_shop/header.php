@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
+<meta name="google-site-verification" content="SBSEgh8KPJPQixnGRxnKBKr6FXXl_sLru9hNajIl-GU" />
 <meta name="language" content="vietnamese">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' /> 
@@ -13,19 +14,19 @@
 <meta name="geo.region" content="VN-Hồ Chí Minh" />
 <meta name="ICBM" content="10.7951050, 106.6504130" />
 <meta name="revisit-after" content="1 days">
-<meta name="dc.description" content="MINHTAN.COM.VN là đơn vị chuyên cung cấp các sản phẩm công nghệ thông minh như Android Tv Box, Kính Thực Tế Ảo, Đồng Hồ Thông Minh - SmartWatch chính hãng, giá rẻ uy tín chất lượng cao.">
-<meta name="dc.keywords" content="android tv box, tv box, dong ho thong minh, đồng hồ thông minh, kinh thuc te ao, kính thực tế ảo, smartwatch">
+<meta name="dc.description" content="Công Ty Minh Tân - Dẫn Đầu Xu Thế ✅ Chuyên cung cấp các loại đồng hồ và đồ chơi công nghệ chính hãng giá tốt nhất hiện nay tại MinhTan.Com.Vn.">
+<meta name="dc.keywords" content="minh tân">
 <meta name="dc.subject" content="Công Ty">
 <meta name="dc.created" content="2015-10-12">
 <meta name="dc.publisher" content="CÔNG TY TNHH GIẢI PHÁP CÔNG NGHỆ MINH TÂN">
 <meta name="dc.rights.copyright" content="MINH TAN">
 <meta name="dc.creator.name" content="MINH TAN CO.,LTD">
-<meta name="dc.creator.email" content="info@minhtan.com.vn">
+<meta name="dc.creator.email" content="lienhe@minhtan.com.vn">
 <meta name="dc.identifier" content="https://minhtan.com.vn/">
 <meta name="dc.language" content="vi-VN">	
 <meta name="p:domain_verify" content="ba57154c52d1ef731aa19d968a9ebe4a"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" type="image/x-icon" href="<?php  global $data; echo $data['favicon_website']; ?>"/>
+<link rel="shortcut icon" type="image/x-icon" href="https://minhtan.com.vn/wp-content/uploads/2018/04/favicon-cong-ty-minh-tan.png"/>
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <link href="<?php bloginfo('template_url'); ?>/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
 <link href="<?php bloginfo('template_url'); ?>/css/bootstrap-theme.css" type="text/css" rel="stylesheet" />
@@ -35,7 +36,8 @@
 <?php if(is_home()) { ?>
 <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/superfish-vertical.css">
 <?php } ?>
-<?php wp_head(); ?>
+<?php wp_head(); ?>         
+        
 <style type="text/css">
 body {
 <?php global $data; $i=0; foreach( $data['body_font'] as $body_font ): $i++; 
@@ -83,27 +85,34 @@ h1.catproduc-title{ color:<?php echo $mausac; ?>;}
 <meta property="og:title" content="<?php wp_title(); ?>">
 <meta property="fb:app_id" content="1848244738784567"/>
 <meta property="fb:admins" content="1605315413072754"/>
-	<meta name="google-site-verification" content="YSmyQjSysOFbF6Uh2mJk7lRC-cY_ng2A-kHEwaeiwTI" />
+<meta name="google-site-verification" content="YSmyQjSysOFbF6Uh2mJk7lRC-cY_ng2A-kHEwaeiwTI" />
 </head>
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.10&appId=1848244738784567";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<body <?php body_class(); ?>>
+                                    <script>(function (d, s, id) {
+                                            var js, fjs = d.getElementsByTagName(s)[0];
+                                            if (d.getElementById(id))
+                                                return;
+                                            js = d.createElement(s);
+                                            js.id = id;
+                                            js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&appId=1848244738784567&version=v2.0";
+                                            fjs.parentNode.insertBefore(js, fjs);
+                                        }(document, 'script', 'facebook-jssdk'));
+                                    </script>
+<body <?php body_class(); ?>>	
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WFLHJWB"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
  <div class="container">
  <div class="header">
-  <div class="row">
+  <div id="fixNav" class="row">
   <div class="col-xs-12 col-md-3 hidden-xs">
 	<?php global $data;
     $get_logo_image = $data['logo_website'];
     if($get_logo_image != '') { ?>
     <a class="thumbnail" style="float:left; border:none; box-shadow:none; margin:0; padding:0" title="<?php bloginfo('name'); ?>" href="<?php bloginfo('url'); ?>"><img src="<?php echo $get_logo_image; ?>" alt="<?php bloginfo('name'); ?>" title="<?php bloginfo('name'); ?>" class="logo" /></a>
     <?php if(is_home()) { ?>
-      <h1 class="h1_an"><?php  global $data; echo $data['h1_home_website']; ?></h1>
+     <h1 class="h1_an"><?php  global $data; echo $data['h1_home_website']; ?></h1>
     <?php } } else { ?>
     <div class="logo_text_wrap">
     <h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
@@ -223,13 +232,7 @@ h1.catproduc-title{ color:<?php echo $mausac; ?>;}
 						 <?php global $data; $facebook = $data['facebook_website'];  if($facebook != '') {?>
                          <li><a title="Hệ thống cửa hàng" href="https://minhtan.com.vn/he-thong-cua-hang/"><span>HỆ THỐNG CỬA HÀNG</span></a></li>
 						 <?php } ?>					
-					</ul>
-  <p class="label  label-danger" style="float:right; padding:5px; margin:5px; border-radius:3px">
-<?php global $woocommerce; ?>
- <a class="cart-contents" style="color:#FFF;font-size:12px" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('Xem giỏ hàng', 'woothemes'); ?>">
-  <span class="fa fa-cart-arrow-down"></span>
- <?php echo sprintf(_n('Giỏ hàng (%d)', 'Giỏ hàng (%d)', $woocommerce->cart->cart_contents_count, 'woothemes'), $woocommerce->cart->cart_contents_count);?></a>
- </p>
+					</ul>  
 </div>
  </div> <!-- end col-md-6 -->
 </div>

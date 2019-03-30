@@ -12,15 +12,22 @@ get_header('shop'); ?>
   <div class="col-xs-12 col-md-9" style="margin:10px 0">
   
  <?php do_action('woocommerce_before_main_content');?>
-     <h1 class="catproduc-title"><span class="glyphicon glyphicon-tasks"></span><?php woocommerce_page_title(); ?></h1>
-	  <?php do_action( 'woocommerce_archive_description' ); ?>
+     <h1 class="catproduc-title"><span class="glyphicon glyphicon-tasks"></span><?php woocommerce_page_title(); ?></h1>	 
+	  
+<div class="clearfix">		  
+<?php do_action( 'woocommerce_archive_description' ); ?>	
+	<div class="read-full">
+		<a href="javascript:void(0)" class="read-more">Xem thêm</a>
+		<a href="javascript:void(0)" class="read-less">Thu gọn</a>
+	</div>
+	  </div>
 <?php  if ( have_posts() ) : ?>	 
 <div class="row navbar" style="max-height:70px; margin-bottom:0">
 <?php do_action( 'woocommerce_before_shop_loop' );?>
 			<?php woocommerce_product_loop_start(); ?>
 				<?php woocommerce_product_subcategories(); ?>
-</div>
-     <div class="row" id="products_container">
+</div>	 
+	  <div class="row" id="products_container">
 <?php $i=0; while ( have_posts() ) : the_post(); $i++;  global  $post, $product; ?>
    <div class="col-xs-6 col-md-3 motsanpham">
   
@@ -34,7 +41,7 @@ get_header('shop'); ?>
  </a>
  <?php } ?>
   
-    <h2><a href="<?php the_permalink() ?>" title="<?php the_title_attribute() ?>"><?php the_title() ?></a></h2>
+    <h3><a href="<?php the_permalink() ?>" title="<?php the_title_attribute() ?>"><?php the_title() ?></a></h3>
     <div class="post-price">
           <div class="price">
 		  <?php echo $product->get_price_html(); ?>
@@ -63,21 +70,51 @@ if ($salevew>0&$salevew<100) {
 <p> Hiện không có sản phẩm nào ! Mời quý khách quay lại trang chủ để mua hàng ! </p>
 <h2><a href="<?php bloginfo('url'); ?>">Trang chủ</a></h2>
 <?php endif; ?>
-
-</div><!-- end  -->	
 <div class="row">
     <div class="load-more-product" data-page="2" data-cat="<?php echo get_queried_object_id() ?>">
         <span> Xem thêm sản phẩm <i class="fa fa-long-arrow-down" aria-hidden="true"></i></span>
     </div>
 <?php // wp_pagenavi(); ?>
 <?php // do_action('woocommerce_pagination'); ?>
-	<hr>
+	<hr>	
+	<div class="panel panel-default">
+            <div class="binhlan"><span class="glyphicon glyphicon-user"></span>Đánh Giá Và Nhận Xét Sản Phẩm</div>								
+            <div class="panel-body binhliansanp">	
+                <div class="fb-like" data-href="<?php the_permalink() ?>" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+                <div class="kk-rating" style="float: left;height: 20px;margin-top: -41px; margin-left: 150px;">
+		  <?php 
+                    $obj = get_queried_object();
+		   if(function_exists("kk_star_ratings")) : echo kk_star_ratings($obj->ID); endif; 
+		  ?>		   
+                </div>								
+                <?php
+                $canonical_url = get_term_link($obj, $obj->taxonomy);
+                ?>
+                <div id="disqus_thread" style="margin-top: 30px"></div>
+                <script>
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+                var disqus_config = function () {
+                    this.page.url = '<?php echo $canonical_url ?>';  // Replace PAGE_URL with your page's canonical URL variable
+                    //this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://minhtancomvn.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            </div> 
+        </div>	
 	<?php
 		do_action('woocommerce_after_main_content');
-	?>		
-</div>
+	?>	
+</div>				
 </div><!-- end col-md-12 col-md-pull-9 -->
 </div><!-- end row -->
 </div><!-- end cat_sanpham  -->
-
 <?php get_footer('shop'); ?>

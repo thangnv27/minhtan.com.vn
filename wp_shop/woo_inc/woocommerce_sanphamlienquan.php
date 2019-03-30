@@ -10,7 +10,7 @@ $args = apply_filters('woocommerce_related_products_args', array(
 	'ignore_sticky_posts'	=> 1,
 	'no_found_rows' 		=> 1,
 	'post__in' 				=> $related,
-	'showposts' => 8,  // Số sản phẩm	 
+	'showposts' => 4,  // Số sản phẩm	 
 	'post__not_in'			=> array($product->id)
 ) );
 
@@ -33,7 +33,7 @@ if ( $products->have_posts() ) : ?>
  <?php } ?>
  
  
-    <h2><a href="<?php the_permalink() ?>" title="<?php the_title_attribute() ?>"><?php  echo $title = cut_string(get_the_title(),50,'...');  ?></a></h2>
+    <h3><a href="<?php the_permalink() ?>" title="<?php the_title_attribute() ?>"><?php  echo $title = cut_string(get_the_title(),50,'...');  ?></a></h3>
     <div class="post-price">
           <div class="price">
 		  <?php echo $product->get_price_html(); ?>
@@ -54,7 +54,8 @@ if ($salevew>0&$salevew<100) {
         </div>
     
     </div>
-   <?php if ($i%4==0 ) { echo'<div class="hrviet"></div>'; }?>
+   <?php if ($i%2==0 ) { echo'<div class="mobile_cl"></div>'; }?>
+        <?php if ($i%4==0 ) { echo'<div class="xuonghangnhanh"></div>'; }?>
 <?php endwhile;  ?> 
 
 </div>

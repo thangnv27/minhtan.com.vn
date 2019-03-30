@@ -21,6 +21,7 @@ function ppo_get_products(){
                 'terms'    => $cat,
             ),
 	),
+        'post_status' => 'publish',
     );
     if($orderby == 'popularity'){
         $args['orderby'] = 'total_sales';

@@ -25,7 +25,17 @@ $( ".mc_input" ).addClass( "form-control" );
 $( ".button" ).addClass( "btn btn-primary  btn-xs" );
 
 
-$( ".input-text" ).addClass( "form-control" )
+$( ".input-text" ).addClass( "form-control" );
 
+$('.read-full a.read-less').hide();
+$('.read-full a.read-more').click(function(e){e.stopPropagation();$('.read-less').show();
+    $('.content-main .page-description').last().addClass('more-overlay');
+     $('.term-description').last().addClass('more-overlay');
+    $(this).hide();$('.term-description').css({'height':'auto'});
+    $('.page-description').css({'height':'auto'});});
+$('.read-full a.read-less').click(function(e){e.stopPropagation();
+        $('.content-main .page-description').last().removeClass('more-overlay');$('.read-more').show();$(this).hide();
+        $('.term-description').last().removeClass('more-overlay');$('.read-more').show();$(this).hide();
+        $('.term-description').css({'height':'100px'});$('.page-description').css({'height':'100px'});});
 /* add style menu */
 

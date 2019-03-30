@@ -1,4 +1,13 @@
 <?php
+/*add field in woocommerce product page admin */
+
+add_filter( 'woocommerce_product_tabs', 'woo_remove_product_tabs', 98 );
+function woo_remove_product_tabs( $tabs ) {
+unset( $tabs['reviews'] ); // Bỏ tab đánh giá
+unset( $tabs['additional_information'] ); // Bỏ tab thông tin bổ xung
+return $tabs;
+}
+
 /* Add style theme */
 require_once ('admin/index.php');
 
@@ -49,6 +58,12 @@ function my_theme_add_editor_styles() {
 }
 add_action( 'init', 'my_theme_add_editor_styles' );
 
+add_filter( 'comment_form_default_fields', 'wpsites_comment_form_fields' );
+ 
+function wpsites_comment_form_fields( $fields ) {
+ unset($fields['url']); 
+return $fields;
+}
 /*
 * Callback function to filter the MCE settings
 */
@@ -202,7 +217,7 @@ if (function_exists('register_sidebar'))
 	register_sidebar( array(
 		'name' => __( 'Sidebar left' ),
 		'id' => 'sub-sidebar',
-		'description' => __( 'The sidebar for the optional Showcase Template', 'Phukiennhatanh.vn' ),
+		'description' => __( 'The sidebar for the optional Showcase Template', 'minhtan.com.vn' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget' => "</div>",
 		'before_title' => '<h4 class="page-widgets">',
@@ -402,3 +417,7 @@ function ppo_enqueue_scripts() {
 }
 
 add_action('wp_enqueue_scripts', 'ppo_enqueue_scripts');
+function lindo_theme_woo() {
+   add_theme_support( 'woocommerce' );
+}
+add_action( 'after_setup_theme', 'lindo_theme_woo' );

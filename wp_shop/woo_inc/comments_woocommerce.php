@@ -74,7 +74,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 	$commenter = wp_get_current_commenter();
 
-	echo '</div><div id="review_form_wrapper"><div id="review_form">';
+	echo '</div><hr><div id="review_form_wrapper"><div id="review_form">';
 
 	$comment_form = array(
 		'title_reply' => $title_reply,

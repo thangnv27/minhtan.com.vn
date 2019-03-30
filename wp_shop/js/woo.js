@@ -11,7 +11,7 @@ jQuery(document).ready(function(){
                 paged: _paged
             },
             success: function(response, textStatus, XMLHttpRequest){
-                if(response.length > 0){
+                if(response.trim().length > 0){
                     _paged += 1;
                     jQuery(".load-more-product").attr('data-page', _paged);
                     jQuery("#products_container").append(response);
